@@ -1,0 +1,28 @@
+<style>
+    input + span { display: none; }
+    input:checked + span { display: inline-block; }
+    input:checked + span + span { display: none; }
+    </style>
+    <body>
+        <input type="checkbox" id="ax">
+        <span style="color:green;"><label for="ax">선택O</label></span>
+        <span style="color: red;"><label for="ax">선택X</label></span>
+        <hr>
+        <input type="checkbox" id="ay">
+        <span style="color:green;"><label for="ay">선택O</label></span>
+        <span style="color: red;"><label for="ay">선택X</label></span><br>
+    </body>
+    <style>
+
+/* transition은 걸리는 시간을 의미함. opacity는 투명도임 0~1
+hover 는 마우스가 올로왔을때 active는 누를때 :visited는 방문후.*/
+a { transition: 1.5s; text-decoration: none; color: black; }
+a:hover { background-color: gold; }
+a:active { background-color: aqua; }
+a:visited { opacity: -1; color: red; }
+</style>
+<body>
+    <a href="http://ggoreb.com">
+        이 링크를 가리켜보세요.
+    </a>
+</body>

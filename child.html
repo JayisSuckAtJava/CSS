@@ -1,0 +1,65 @@
+<style>
+    .child > u:nth-child(odd) {
+    background-color: coral;
+    }
+    .type > u:nth-of-type(2n) {
+    background-color: coral;
+    }
+/*  odd 홀수 ( 2n+1도 사용가능 )  반대는 even 홀수 ( 2n 으로도 사용가능 ) 수식의 n은 0부터 시작함
+그래서 2와 5를 선택하고 싶으면 3n+2 다 이말이야    */
+    </style>
+    <body>
+        <div class="child">
+            <u>1번</u> <u>2번</u> <u>3번</u>
+            <u>4번</u> <u>5번</u> <u>6번</u>
+        </div>
+        <div class="type">
+            <u>1번</u> <u>2번</u> <u>3번</u>
+            <u>4번</u> <u>5번</u> <u>6번</u>
+        </div>
+    </body>
+<br><br><br><br>
+<!-- x:nth-child(number) 와 x:nth-of-type 는 x만 계산함. 다른 타입은 계산 안함.   -->
+
+        <body>
+            <div class="child">
+                <u>1번</u> <u>2번</u> <em>3번</em>
+                <u>4번</u> <u>5번</u> <u>6번</u>
+            </div>
+            <div class="type">
+                <u>1번</u> <u>2번</u> <em>3번</em>
+                <u>4번</u> <u>5번</u> <u>6번</u>
+            </div>
+        </body>
+        <br>
+<!-- 그리고 또한 부모에 따라 독립적인 계산을함.-->
+        <style>
+ td:nth-of-type(2n+1) {
+ background : lime;
+ }
+ </style>
+<body>
+    <table border="1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+</body>
