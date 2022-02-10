@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+<style>
+.flexbox {
+	display: flex;
+	height: 30px;
+}
+
+.item1:first-child {
+	width: 20%;
+	height: 20px;
+	background-color: yellow;
+    border: solid 2px black;
+}
+.item2:nth-child(2) {
+	width: 20%;
+	height: 20px;
+	background-color: green;
+    border: solid 2px black;
+}
+.item3:last-child {
+	width: 20%;
+	height: 20px;
+	background-color: purple;
+    border: solid 2px black;
+}
+#container1{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+}
+#container2{
+    justify-content: center;
+}
+#container3 {
+    justify-content: space-around;
+}
+</style>
+</head>
+<body>
+	<div class="flexbox" id="container1">
+  		<div class="item1"></div> 
+  		<div class="item2"></div> 
+  		<div class="item3"></div>
+	</div>
+	<div class="flexbox" id="container2">
+  		<div class="item1"></div> 
+  		<div class="item2"></div> 
+  		<div class="item3"></div>
+	</div>
+	<div class="flexbox" id="container3">
+  		<div class="item1"></div> 
+  		<div class="item2"></div>
+  		<div class="item3"></div>
+	</div>	
+</body>
+</html>

@@ -1,0 +1,48 @@
+<style>
+    div {
+    display: inline-block;
+    width: 100px;
+    height: 150px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+    margin: 5px;
+    }
+    div :last-child {
+        display: none;
+        border: solid 4px black;
+    }
+    div :first-child{
+        display: inline-block;
+    }
+    div:hover> :first-child{
+        display: none;
+    }
+    div:hover> :last-child{
+        display: inline-block;
+        border: solid 4px red;
+    }
+   </style>
+   <body>
+   <div id='chopper'>
+       <img src="./image/chopper-a.jpg" height="150">
+       <img src="./image/chopper-b.png" height="150">
+   </div>
+   <div id='luffy'>
+    <img src="./image/luffy-a.jpg" height="150">
+    <img src="./image/luffy-b.png" height="150">
+   </div>
+   <div id='robin'>
+    <img src="./image/robin-a.jpg" height="150">
+    <img src="./image/robin-b.png" height="150">
+   </div>
+   <div id='usopp'>
+    <img src="./image/usopp-a.jpg" height="150">
+    <img src="./image/usopp-b.png" height="150">
+   </div>
+   <div id='zoro'>
+    <img src="./image/zoro-a.jpg" height="150">
+    <img src="./image/zoro-b.png" height="150">
+   </div>
+</body>
+   
